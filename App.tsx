@@ -6,6 +6,7 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import AccountDeletion from './pages/AccountDeletion';
 import Support from './pages/Support';
+import ChildSafety from './pages/ChildSafety';
 import { Layout } from './components/Layout';
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/terms" element={<Terms />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/child-safety" element={<ChildSafety />} />
         </Routes>
       </Layout>
     </HashRouter>

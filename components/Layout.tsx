@@ -106,6 +106,13 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             >
               Account Deletion
             </Link>
+            <Link 
+              to="/child-safety" 
+              className="text-lg font-medium text-slate-400 hover:text-[#FF6B00]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Child Safety Standards
+            </Link>
             
             <div className="pt-8">
               <button className="w-full py-5 bg-[#3D1F00] text-white rounded-2xl text-xl font-bold shadow-xl shadow-slate-900/10">
@@ -153,6 +160,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
               <ul className="space-y-4 text-sm text-slate-500">
                 <li><Link to="/privacy" className="hover:text-[#FF6B00] transition-colors">Privacy Policy</Link></li>
                 <li><Link to="/terms" className="hover:text-[#FF6B00] transition-colors">Terms of Service</Link></li>
+                <li><Link to="/child-safety" className="hover:text-[#FF6B00] transition-colors">Child Safety Standards</Link></li>
               </ul>
             </div>
           </div>
